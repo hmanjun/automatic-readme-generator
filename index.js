@@ -71,7 +71,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
         .prompt(questions)
-        .then()
+        .then(writeToFile("READEME.md",genMarkdown(response)))
 }
 
 // Function call to initialize app
