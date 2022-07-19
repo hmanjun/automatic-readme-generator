@@ -3,8 +3,11 @@
 ## Description
 This application allows users to quickly generate a professional README files. The application simply prompts the user on relevant information, and uses the answers provided to generate a README.md file. 
 
+This project is made in JS and uses the inquirer node package to function.
+
 ## Working Project
 
+![Working product gif](./assets/img/working-product.gif)
 
 ## Table of Contents
 * [Installation](#installation)
