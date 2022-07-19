@@ -9,7 +9,7 @@ const questions = [
     {
         type: "input",
         name: "projName",
-        message: "What is the name of the project?"
+        message: "Enter the name of the project: "
     },
     {
         type: "input",
@@ -46,24 +46,24 @@ const questions = [
     {
         type: "input",
         name: "contributing",
-        message: "Enter the recomended way for other to contribute, if any: "
+        message: "Enter the recomended way for other to contribute: "
     },
     {
         type:"input",
         name: "gUserName",
-        message: "What is you Github username?"
+        message: "Enter your Github username: "
     },
     {
         type: "input",
         name: "email",
-        message: "What is your email address?"
+        message: "Enter your email address: "
     }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName,data,(err) => {
-        err ? console.log("An error occured, file was not created.") : console.log("README file was successfully created!")
+        err ? console.log("An error occured, file was not created.") : console.log("README file was successfully created!") //if statement checks if file was created
     })
 }
 

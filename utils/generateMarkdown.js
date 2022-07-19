@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(license === "Unlicense" || license === ""){
+  if(license === "Unlicense" || license === ""){ //Dont enter anything if no license option was chosen
     return ""
   } else if(license === "Apache"){
     return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
@@ -15,7 +15,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(license === "Unlicense" || license === ""){
+  if(license === "Unlicense" || license === ""){ //Dont enter anything if no license option was chosen
     return ""
   } else if(license === "Apache"){
     return `[Apache](https://choosealicense.com/licenses/apache-2.0/)`
